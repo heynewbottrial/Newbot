@@ -35,9 +35,9 @@ logging.basicConfig(
 
 bot = Client(
     "bot",
-    api_id= 4942197,
-    api_hash= "13248a2c551b73193969b42194023635",    
-    bot_token= "6913163552:AAHy8Tmi-HYELZkViq0rUVLQ7cTWjYJoiMk"
+    api_id= 24262622 ,
+    api_hash= "50831eb3329ed9c0557aa2bc6aa34376",    
+    bot_token= "6981753441:AAGzoC0Tabw3Shp42fRy_TV4bOxvpl7Stpc"
 )
 
 @bot.on_message(filters.command(["start"]))
@@ -83,22 +83,22 @@ async def account_login(bot: Client, m: Message):
         return fetched_contents
 
     headers = {
-        'accept-encoding': 'gzip',
-        'accept-language': 'EN',
-        'api-version'    : '35',
-        'app-version'    : '1.4.73.2',
-        'build-number'   : '35',
-        'connection'     : 'Keep-Alive',
-        'content-type'   : 'application/json',
-        'device-details' : 'Xiaomi_Redmi 7_SDK-32',
-        'device-id'      : 'c28d3cb16bbdac01',
-        'host'           : 'api.classplusapp.com',
-        'region'         : 'IN',
-        'user-agent'     : 'Mobile-Android',
-        'webengage-luid' : '00000187-6fe4-5d41-a530-26186858be4c'
-    }
-
-    api = 'https://api.classplusapp.com/v2'
+    'Host': 'api.classplusapp.com',
+    'x-access-token': '',
+    'user-agent': 'Mobile-Android',
+    'app-version': '1.4.65.3',
+    'api-version': '29',
+    'device-id': 'f84b35cfafd42686',
+    'device-details': 'xiaomi_Mi 9T Pro_SDK-29',
+    'region': 'IN',
+    'x-chrome-version': '108.0.5359.128',
+    'webengage-luid': '00000185-717d-b94d-b2a5-f576008be3cf',
+    'accept-language': 'EN',
+    'content-type': 'application/json',
+    'build-number': '29',
+    'accept-encoding': 'gzip'
+}
+    api = 'https://api.classplusapp.com'
 
     try:
 
@@ -164,7 +164,7 @@ async def account_login(bot: Client, m: Message):
                                 'otp'          : otp,
                                 'sessionId'    : session_id,
                                 'orgId'        : org_id,
-                                'fingerprintId': 'a3ee05fbde3958184f682839be4fd0f7',
+                                'fingerprintId': 'b65dccdf864a40e2f42f48a869f3c571',
                                 'countryExt'   : '91',
                                 'mobile'       : phone_no,
                             }
